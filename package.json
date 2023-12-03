@@ -1,0 +1,18 @@
+{
+  "name": "aoc2023",
+  "private": true,
+  "scripts": {
+    "start": "turbo start",
+    "new": "turbo gen day --args",
+    "format": "biome format --write tasks"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@turbo/gen": "^1.10.16",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

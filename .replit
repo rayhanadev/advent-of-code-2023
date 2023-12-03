@@ -1,0 +1,22 @@
+run = "pnpm start"
+modules = ["nodejs-20:v12-20231130-57acee0"]
+
+hidden = [
+  ".config",
+  ".turbo",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "biome.json",
+  "tsconfig.json",
+  "turbo.json",
+  ".*",
+  
+]
+
+[nix]
+channel = "stable-23_05"
+
+[env]
+XDG_CONFIG_HOME = "$REPL_HOME/.config"
+PATH = "$REPL_HOME/node_modules/.bin:$REPL_HOME/.config/npm/node_global/bin"
+npm_config_prefix = "$REPL_HOME/.config/npm/node_global"
